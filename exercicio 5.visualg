@@ -1,0 +1,26 @@
+algoritmo "CalculoMedia"
+
+var
+  quantidade, i: inteiro
+  numero, soma, media: real
+  
+inicio
+
+  escreval("Quantos números serão inserios: ")
+  leia(quantidade)
+
+  soma <- 0
+
+  para i de 1 ate quantidade faca
+
+  escreval("Digite o ", i,"° número: ")
+  leia(numero)
+
+   soma <- soma + numero
+  fimpara
+
+  media <-soma / quantidade
+
+  escreva("A média aritmética é:", media, "!")
+
+fimalgoritmo

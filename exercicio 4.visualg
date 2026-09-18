@@ -1,0 +1,19 @@
+algoritmo "MediaAritmetica"
+
+var
+  massa, aceleracao, forca:
+  real
+
+inicio
+
+  escreval("Digite a massa do objeto (KG): ")
+  leia(massa)
+
+  escreval("Digite a aceleracao do objeto (m/s2): ")
+  leia(aceleracao)
+
+forca <- massa * aceleracao
+
+  escreva("A forca do objeto é:", forca, " N")
+
+fimalgoritmo

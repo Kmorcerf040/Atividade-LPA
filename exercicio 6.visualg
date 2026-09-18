@@ -1,0 +1,24 @@
+algoritmo "Tabuada"
+
+var
+  opcao, i, j: inteiro
+
+inicio
+
+  escreval("Deseja exibir a tabuada de 1 a 10? (S/N):")
+  leia(opcao)
+
+  se opcao = "S" entao
+    para i de 1 ate 10 faca
+      escreval("Tabuada do", i)
+    para j de 1 ate 10 faca
+      escreval(i, " x ", j, " = ", i * j)
+    fimpara
+
+    escreval("")
+  fimpara
+senao
+  escreva("Programa encerrado")
+  fimse
+
+fimalgoritmo
