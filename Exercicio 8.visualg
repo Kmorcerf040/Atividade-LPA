@@ -1,0 +1,43 @@
+algoritmo "Jogo"
+
+var
+   palavra, dica, palpite: caractere
+   tentativas, tentativa: inteiro
+
+inicio
+
+   escreval("JOGADOR 1")
+   escreva("Digite a palavra-chave: ")
+   leia(palavra)
+
+   escreva("Digite uma dica: ")
+   leia(dica)
+
+   escreva("Quantas tentativas o jogador 2 vai precisar? ")
+   leia(tentativas)
+
+   escreval("")
+   escreval("JOGADOR 2")
+   escreval("Dica: ", dica)
+
+   tentativa <- 0
+
+   repita
+      tentativa <- tentativa + 1
+      escreva("Tentativa ", tentativa, ": ")
+      leia(palpite)
+   ate (palpite = palavra)
+
+   escreval("")
+
+   se tentativa < tentativas entao
+      escreval("Jogador 2 venceu!")
+   senao
+      se tentativa = tentativas entao
+         escreval("Jogador 1 venceu!")
+      senao
+         escreval("Empate!")
+      fimse
+   fimse
+
+fimalgoritmo
